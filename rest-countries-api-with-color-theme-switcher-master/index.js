@@ -70,10 +70,10 @@ function createcountry(element) {
     cidx++;
     let div = document.createElement("div");
     div.classList.add("container")
-    div.innerHTML = `<img src= ${element.flags["png"]} id="countryflag${cidx}">
+    div.innerHTML = `<img src= ${element.flags["png"]} id="countryflag${cidx}" alt = "image">
             <h1 id="countryname${cidx}" class ="name">${element.name["common"]}</h1>
             
-            <p>population:  <span id="popolation+${cidx}">${element.population}</span></p>
+            <p>population:  <span id="popolation${cidx}">${element.population}</span></p>
             
             
             <p> region: <span class="regionname">${element.region}</span></p>
