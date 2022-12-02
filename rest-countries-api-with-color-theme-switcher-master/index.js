@@ -13,7 +13,7 @@ let capital = document.getElementById("capital");
 let selectregion = document.getElementById("Region");
 let secondpage = document.getElementsByClassName("countrydetail")[0];
 
-let cidx = 0;
+let cidx = 4;
 back.addEventListener('click', () => {
 
     firstpage.style.visibility = "visible";
@@ -67,18 +67,18 @@ fetch(`https://restcountries.com/v3.1/all`).then(res => res.json()).then(result 
 
 
 function createcountry(element) {
-
+    cidx++;
     let div = document.createElement("div");
     div.classList.add("container")
-    div.innerHTML = `<img src= ${element.flags["png"]} id="countryflag">
-            <h1 id="countryname" class ="name">${element.name["common"]}</h1>
+    div.innerHTML = `<img src= ${element.flags["png"]} id="countryflag${cidx}">
+            <h1 id="countryname${cidx}" class ="name">${element.name["common"]}</h1>
             
-            <p>population:  <span id="popolation">${element.population}</span></p>
+            <p>population:  <span id="popolation+${cidx}">${element.population}</span></p>
             
             
             <p> region: <span class="regionname">${element.region}</span></p>
             
-            <p> capital: <span id="capital">${element.capital}</span></p>`;
+            <p> capital: <span id="capital${cidx} ">${element.capital}</span></p>`;
 
 
     document.getElementsByClassName("countrycontainer")[0].appendChild(div);
@@ -170,7 +170,7 @@ function showdetail(data) {
    
 
 
-    document.getElementById("countryflag2").innerHTML = ` <img src= ${data.flags["png"]} alt="" class="flag">`
+    document.getElementById("countryflag2").innerHTML = ` <img src= ${data.flags["png"]} alt="image" class="flag">`
     document.getElementById("countryname2").innerHTML = `${data.name["common"]}`
     document.getElementById("population2").innerHTML = `${data.population}`
     document.getElementById("region2").innerHTML = `${data.region}`
