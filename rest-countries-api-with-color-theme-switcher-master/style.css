@@ -1,0 +1,379 @@
+
+:root{
+
+    --darkblue: hsl(207, 26%, 17%);
+    --whiite:hsl(0, 0%, 100%);
+    --blue:hsl(209, 23%, 22%);
+    --span:hsl(0, 13%, 74%);
+    
+    }
+
+
+*{
+    margin: 0;padding: 0;
+}
+
+
+body{
+    height: 100%;
+
+}
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    background-color:var(--darkblue);
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.main{
+   
+    color: var(--whiite);;
+    width: 100%;
+    height: 100%;
+ 
+}
+.container{
+   
+    width: 14rem;
+    height: 19rem;
+   
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+   background-color: var(--blue);
+   margin-top: 1rem;
+   box-shadow: -1px -1px 22px -4px rgba(0,0,0,0.75);
+   cursor: pointer;
+
+}
+.container h1{
+    font-size: 1rem;
+    margin-left: 1rem;
+    text-transform: capitalize;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-family: 'Nunito Sans', sans-serif
+}
+.container p{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    line-height: 0.5rem;
+    text-transform: capitalize;
+    font-family: 'Nunito Sans', sans-serif;
+    position: relative;
+    top: 0.1rem;
+    font-weight: 500;
+   color: var(--whiite);
+   font-family: 'Nunito Sans', sans-serif
+
+}
+.container img{
+  
+    object-fit: cover;
+    height: 10rem;
+    width: 100%;
+
+}
+.nav-bar {
+    display: inline-flex;
+    height: 4rem;
+    width: 100vw;
+   background-color: var(--blue);
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif
+   
+}
+.nav-bar header{
+    font: 1.6rem;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0rem 5rem;
+}
+#mode{
+    position: relative;
+    left: -5rem;
+ 
+}
+
+#input {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    background: var(--blue);
+    color: var(--whiite);
+    color: var(--whiite);;
+    padding-left: 3rem;
+    outline: none;
+}
+ #Region{
+    position: relative;
+    left: -7rem;
+   
+    width: 9rem;
+    height: 2.5rem;
+   
+    background: var(--blue);
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    left: 46rem;
+    color: var(--whiite);
+    cursor: pointer;
+ }
+select option{
+
+    /* background: var(--blue); */
+    background: transparent;
+    outline: none;
+    border: none;
+    color: var(--whiite);;
+ }
+
+
+#modetype{
+    color: var(--whiite);
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+
+}
+
+
+
+ ::placeholder{
+    color: var(--whiite);;
+ }
+.countrycontainer{
+    display: inline-flex;
+    font-family: 'Nunito Sans', sans-serif;
+    flex-wrap: wrap;
+}
+#searchicon{
+    position: relative;
+    left: 6rem;
+    top: 0.2rem;
+}
+.countrydetail {
+    width: 100%;
+    background-color:var(--darkblue);
+    position: relative;
+    top: 0rem;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+   visibility: hidden;
+   height: 100vh;
+   
+ 
+}
+.flag{
+    width: 23rem;
+    height: 17rem;
+    position: relative;
+    left: 5rem;
+    top: -2rem;
+
+}
+.details{
+    position: relative;
+    left: 12rem;
+    top: -4rem;
+}
+.details h1{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    text-transform: capitalize;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    margin-top: 1rem;
+    font-family: 'Nunito Sans', sans-serif
+}
+.details p{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    line-height: 0.5rem;
+    text-transform: capitalize;
+    font-family: 'Nunito Sans', sans-serif;
+    position: relative;
+    top: 0.1rem;
+    font-weight: 500;
+   color: var(--whiite);
+   font-family: 'Nunito Sans', sans-serif
+}
+.border{
+    position: relative;
+    top: 4rem;
+    width: 19rem;
+    height: 3rem;
+    display: inline-flex;
+    left: 2.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.borders{
+    padding: 0rem 0.7rem;
+background:  var(--blue);
+font-size: 0.8rem;
+color: var(--whiite);
+font-weight: 500;
+text-transform: capitalize;
+font-family: 'Nunito Sans', sans-serif;
+}
+.domain{
+    position: relative;
+    top: -2rem;
+    width: 18rem;
+    height: 7rem;
+    left: 1.2rem;
+
+    
+
+}
+.currency{
+padding: 0rem 0.7rem;
+
+font-size: 0.8rem;
+color: var(--whiite);
+font-weight: 500;
+text-transform: capitalize;
+font-family: 'Nunito Sans', sans-serif;
+}
+#back{
+    position: relative;
+    top: -14rem;
+    left: 8rem;
+   
+    cursor: pointer;
+    background: var(--blue);
+    outline: none;
+    border: none;
+    color: var(--whiite);;
+    padding: 0.5rem 0.5rem;
+    /* box-shadow: 10px 10px 39px 13px rgba(0,0,0,0.71); */
+
+}
+span{
+    color:var(--span)    ;
+}
+@media screen and (max-width:375px) {
+
+.nav-bar{
+
+width: 53rem;
+
+}
+#input{
+    width: 38rem;
+    height: 3.5rem;
+}
+#Region{
+   left: 4rem;
+    top: 3rem;
+}
+ .countrycontainer{
+
+    position: relative;
+    left: 10rem;
+ }
+ .container{
+    width: 39rem;
+    height: 32rem;
+    top: 3rem;
+    left: -8rem;
+ }
+
+.container img{
+    height: 20rem;
+}
+.container p{
+    font-size: 1.3rem;
+    font-family: 'Nunito Sans', sans-serif
+}
+.container h1{
+    font-size: 2rem;
+    font-family: 'Nunito Sans', sans-serif
+}
+.countrydetail{
+    top: 10rem;
+    left: 2rem;
+    display: block;
+}
+.flag{
+    width: 38rem;
+    height: 21rem;
+    position: relative;
+    left: 3rem;
+    top: -2rem;
+}
+.details{
+    
+        position: relative;
+        left: 2rem;
+        top: -2rem;
+}
+
+.domain{
+    left: 2.2rem;
+    font-family: 'Nunito Sans', sans-serif
+}
+.border {
+   
+    top: 6rem;
+    left: 2.1rem;
+}
+
+.currency{
+    font-size: 1.3rem;
+
+}
+.details p{
+    font-size: 1.3rem;
+    font-family: 'Nunito Sans', sans-serif
+}
+.borders{
+    top: 6rem;
+    left: 2.3rem;
+}
+
+
+
+#back {
+   
+    top: -5rem;
+    left: 3rem;
+    padding: 1rem 1.4rem;
+}
+#searchicon {
+    position: relative;
+    left: 5rem;
+    top: 5.5rem;
+}
+
+
+
+::placeholder {
+    font-weight: bold;
+ font-size: 1rem;
+}
+input[type="text"] {
+    font-size: 1.2rem;
+  
+}
+
+
+
+}

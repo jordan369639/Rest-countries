@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest countries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./icons8-earth-globe-16.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+
+<nav class="nav-bar">
+    <header id="headder">Where in the world ?</header>
+
+   
+    <span id="mode"> <span id="modeicon"> <i class="fa-solid fa-moon "></i></span>  <span id="modetype"> Dark mode  </span>  </span>
+    
+
+</nav>
+<div class="firstpage">
+<form action="">
+  <span id="searchicon">  <i class="fa-solid fa-magnifying-glass"></i></span>
+<input type="text" name="name" id="input" placeholder="search country...">
+
+<select name="Region" id="Region">
+  <option  class=""  value="">Filter by Region</option>
+  <option  class="select"  value="Africa">Africa</option>
+  <option  class="select"  value="America">America</option>
+  <option  class="select"  value="Asia">Asia</option>
+  <option  class="select"  value="europe">Europe</option>
+  <option  class="select"  value="Oceania">Oceania</option>
+</select>
+
+</form>
+
+
+<div class="countrycontainer">
+<!-- //container for showing all the flgs and the detail of a country? -->
+</div>
+
+
+
+</div>
+<div class="countrydetail">
+<button id="back"><i class="fa-solid fa-arrow-left"></i>  Back</button>
+  <figure id="countryflag2"> <img src="./design/mobile-design-detail-dark.jpg" alt="" class="flag"></figure>  
+    <div class="details">
+<h1 id="countryname2">_</h1>
+<p >Native name: <span id="native">NA</span></p>
+<p > Population: <span id="population2">NA</span></p>
+<p >Region:      <span id="region2">NA</span></p>
+<p >Sub-Region:  <span id="sub-region">NA</span></p>
+<p >Capital:     <span id="capital1">NA</span></p>
+</div>
+
+
+<div class="border">
+<p>Border countries:</p>
+ <div class="borders"><span id="border1"> N/A</span></div>
+ <div class="borders"><span id="border2"> N/A</span></div>
+ <div class="borders"><span id="border3"> N/A</span></div> 
+</div>
+<div class="domain">
+
+<div class="currency" >top level domain:<span id="topdomain"> _ </span></div>
+<div class="currency" >currency: <span id="rupees">_</span> </div>
+<div class="currency" >language: <span id="language1"> _</span> <span id="language2"> <span id="language3"></span></span> </div>
+
+
+</div>
+</div>
+
+
+
+
+</div>    
+
+
+
+
+</body>
+<script src="index.js"></script>
+<script src="clickfun.js"></script>
+</html>
